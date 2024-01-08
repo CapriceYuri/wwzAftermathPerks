@@ -12,3 +12,8 @@ td,th{
 #hr,#med,#fix,#slash,#ex,#dm,#v{
     display: none;
 }
+
+.pick {
+    background-color: orange;
+    border-radius: 10px;
+}
