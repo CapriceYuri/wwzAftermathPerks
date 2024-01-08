@@ -27,179 +27,80 @@ let optionJ = [...colJ]
 let optionK = [...colK]
 let optionL = [...colL]
 
-for (let i = 0; i < colB.length; i++) {
-    colB[i].addEventListener('click', function () {
-        this.classList.toggle('pick')
-    })
-}
 colB.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')) {
-            countB++;
-            console.log(countB)
-        } else {
-            countB--;
-            console.log(countB)
+        for (let i = 0; i < colB.length; i++) {
+            colB[i].classList.remove('pick');
         }
-        if (countB > 1) {
-            option.classList.remove('pick');
-            countB--;
-            console.log(countB)
-        }
+        option.classList.add('pick')
     })
 })
-
-for (let i = 0; i < colC.length; i++) {
-    colC[i].addEventListener('click', function () {
-        this.classList.toggle('pick')
-    })
-}
 colC.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')) {
-            countC++;
-        } else {
-            countC--;
+        for (let i = 0; i < colC.length; i++) {
+            colC[i].classList.remove('pick');
         }
-        if (countC > 1) {
-            option.classList.remove('pick');
-            countC--;
-        }
+        option.classList.add('pick')
     })
 })
-
-for (let i = 0; i < colD.length; i++) {
-    colD[i].addEventListener('click', function () {
-        this.classList.toggle('pick')
-    })
-}
 colD.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')) {
-            countD++;
-        } else {
-            countD--;
+        for (let i = 0; i < colD.length; i++) {
+            colD[i].classList.remove('pick');
         }
-        if (countD > 1) {
-            option.classList.remove('pick');
-            countD--;
-        }
+        option.classList.add('pick')
     })
 })
 
-// CODE DIVISION
-
-for (let i = 0; i < colF.length; i++) {
-    colF[i].addEventListener('click', function () {
-        this.classList.toggle('pick')
-    })
-}
 colF.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')) {
-            countF++;
-        } else {
-            countF--;
+        for (let i = 0; i < colF.length; i++) {
+            colF[i].classList.remove('pick');
         }
-        if (countF > 1) {
-            option.classList.remove('pick');
-            countF--;
-        }
+        option.classList.add('pick')
     })
 })
-
-for (let i = 0; i < colG.length; i++) {
-    colG[i].addEventListener('click', function () {
-        this.classList.toggle('pick')
-    })
-}
 colG.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')) {
-            countG++;
-        } else {
-            countG--;
+        for (let i = 0; i < colG.length; i++) {
+            colG[i].classList.remove('pick');
         }
-        if (countG > 1) {
-            option.classList.remove('pick');
-            countG--;
-        }
+        option.classList.add('pick')
     })
 })
 
-for (let i = 0; i < colH.length; i++) {
-    colH[i].addEventListener('click', function () {
-        this.classList.toggle('pick')
-    })
-}
 colH.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')) {
-            countH++;
-        } else {
-            countH--;
+        for (let i = 0; i < colH.length; i++) {
+            colH[i].classList.remove('pick');
         }
-        if (countH > 1) {
-            option.classList.remove('pick');
-            countH--;
-        }
+        option.classList.add('pick')
     })
 })
-// CODE DIVISION
-for (let i = 0; i < colJ.length; i++) {
-    colJ[i].addEventListener('click', function () {
-        this.classList.toggle('pick')
-    })
-}
+
 colJ.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')) {
-            countJ++;
-        } else {
-            countJ--;
+        for (let i = 0; i < colJ.length; i++) {
+            colJ[i].classList.remove('pick');
         }
-        if (countJ > 1) {
-            option.classList.remove('pick');
-            countJ--;
-        }
+        option.classList.add('pick')
     })
 })
 
-for (let i = 0; i < colK.length; i++) {
-    colK[i].addEventListener('click', function () {
-        this.classList.toggle('pick')
-    })
-}
 colK.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')) {
-            countK++;
-        } else {
-            countK--;
+        for (let i = 0; i < colK.length; i++) {
+            colK[i].classList.remove('pick');
         }
-        if (countK > 1) {
-            option.classList.remove('pick');
-            countK--;
-        }
+        option.classList.add('pick')
     })
 })
 
-for (let i = 0; i < colL.length; i++) {
-    colL[i].addEventListener('click', function () {
-        this.classList.toggle('pick')
-    })
-}
 colL.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')) {
-            countL++;
-        } else {
-            countL--;
+        for (let i = 0; i < colL.length; i++) {
+            colL[i].classList.remove('pick');
         }
-        if (countL > 1) {
-            option.classList.remove('pick');
-            countL--;
-        }
+        option.classList.add('pick')
     })
 })
-// CODE DIVISION

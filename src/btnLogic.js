@@ -16,6 +16,9 @@ const exSection = document.querySelector('#ex')
 const dmSection = document.querySelector('#dm')
 const vSection = document.querySelector('#v')
 
+const btn8 = document.querySelectorAll('.class8');
+const section8 = document.querySelectorAll('.section8')
+
 gsPerk.addEventListener('click', () => {
     gsPerk.checked = true;
     hrPerk.checked = false;
@@ -167,3 +170,5 @@ vPerk.addEventListener('click', () => {
     dmSection.style.display = 'none';
     vSection.style.display = 'block';
 })
+
+
