@@ -171,4 +171,16 @@ vPerk.addEventListener('click', () => {
     vSection.style.display = 'block';
 })
 
+const adminColor = document.querySelector('.admin-color');
 
+
+
+function changeColor() {
+    let colorR = Math.ceil(Math.random() * 255)
+    let colorG = Math.ceil(Math.random() * 255)
+    let colorB = Math.ceil(Math.random() * 255)
+    let color = `rgb(${colorR},${colorG},${colorB})`
+    adminColor.style.color = color;
+}
+
+setInterval(changeColor, 500)
