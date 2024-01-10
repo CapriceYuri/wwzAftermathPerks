@@ -184,19 +184,3 @@ function changeColor() {
 }
 
 setInterval(changeColor, 500)
-
-// Testing
-const coverP = document.querySelector('.cover-wrap');
-const mainP = document.querySelector('#page');
-const removeCover = document.querySelector('.cover-title');
-
-removeCover.addEventListener('click', () => {
-    coverP.classList.add('escape')
-    setTimeout(() => {
-        coverP.style.opacity = 0;
-    }, 1000)
-    setTimeout(() => {
-        coverP.style.display = 'none';
-        mainP.style.display = 'block';
-    }, 1000)
-})
