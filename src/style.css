@@ -3,12 +3,14 @@
     margin: 0;
 }
 .cover-wrap{
+    position: absolute;
     background: url('../images/cover.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    width: auto;
+    width: 100vw;
+    z-index: 99;
 }
 .cover-title{
     position: absolute;
@@ -20,7 +22,7 @@
     cursor: pointer;
 }
 #page{
-    display: none;
+    display: block;
 }
 body {
     background-color: #1e1e1e;
