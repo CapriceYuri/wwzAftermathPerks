@@ -1,5 +1,26 @@
 *{
     transition: 500ms linear;
+    margin: 0;
+}
+.cover-wrap{
+    background: url('../images/cover.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+}
+.cover-title{
+    position: absolute;
+    top: 50%;
+    right:50%;
+    transform: translate(50%, -50%);
+    opacity: 50%;
+    z-index: 99 ;
+    cursor: pointer;
+}
+#page{
+    display: none;
 }
 body {
     background-color: #1e1e1e;
@@ -90,3 +111,15 @@ a{
         transform: translateX(-3px) rotate(-1.2deg);
     }
 }
+/* TESTING */
+.escape {
+    animation: fade-out 1s ease-out both;
+}
+@keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
