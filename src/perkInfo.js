@@ -1773,7 +1773,7 @@ perks.forEach(item => {
             // Third Set
             case 'x34':
                 pName.textContent = 'Perfect Shot'
-                pInfo.textContent = 'When you headshot an incapacitated teammate, they will automatically rise up and grants masking for 3 seconds.'
+                pInfo.textContent = 'Friendly fire on an incapacitated teammate will instant kill them, but a headshot will allow them to automatically rise up and grants masking for 3 seconds.'
                 break;
             case 'x8':
                 pName.textContent = 'Perfect Mix'
