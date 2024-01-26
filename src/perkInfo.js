@@ -3,7 +3,14 @@ const pName = document.querySelector('.perk-name')
 const pInfo = document.querySelector('.perk-info')
 
 perks.forEach(item => {
-    item.addEventListener('mouseover', () => {
+    item.addEventListener('mouseout', () => {
+        pName.textContent = '';
+        pInfo.textContent = ''
+    })
+})
+
+perks.forEach(item => {
+    item.addEventListener('mouseenter', () => {
         const itemId = item.id;
         switch (itemId) {
             // First Set
@@ -1632,6 +1639,209 @@ perks.forEach(item => {
             case 'vm2':
                 pName.textContent = 'Linebacker'
                 pInfo.textContent = 'Shield Charge allows you to run for an additional 1 seconds (base: 5 seconds).'
+                break;
+
+            // DIVISON CODE 
+            // First Set
+            case 'xr1':
+                pName.textContent = 'Oni'
+                pInfo.textContent = `Start with Compact SMG and Ninjutsu. Take 50% more friendly fire damage. Cannot be block while moving, zombies are push back,`
+                break;
+            case 'x1':
+                pName.textContent = 'Together Stronger'
+                pInfo.textContent = 'Same classes are empowered. Player who are empowered have increased 10% more damage. (Max 40%)'
+                break;
+
+            // First Column
+            case 'x2':
+                pName.textContent = 'The Gathering'
+                pInfo.textContent = `While sprinting along with you teammate, you can sprint 20% faster.`
+                break;
+            case 'x10':
+                pName.textContent = 'Quantum'
+                pInfo.textContent = `You can never be pinned by usual nor special zombies.`
+                break;
+            case 'x19':
+                pName.textContent = 'Acceleration'
+                pInfo.textContent = `You can move 30% faster but all damage taken increased 100%.`
+                break;
+            case 'x28':
+                pName.textContent = 'Sign of Purity'
+                pInfo.textContent = `Negative effects received from special zombies are negated. (cooldown 180 seconds)`
+                break;
+
+            // Second Column
+            case 'x11':
+                pName.textContent = 'Batman'
+                pInfo.textContent = 'Your sprint does damage to zombies you collide with. '
+                break;
+            case 'x20':
+                pName.textContent = 'Shunpo'
+                pInfo.textContent = 'Consume a Ninjutsu charge, target a teammate to instant teleport to their location. (Range 20 meters)'
+                break;
+            case 'x29':
+                pName.textContent = `Battle Stance`
+                pInfo.textContent = `Consume a Ninjutsu charge, all active zombies in the area will target you instead of your teammates. Your primary, secondary and heavy weapons deal 25% more damage for 10 seconds. `
+                break;
+            case 'x3':
+                pName.textContent = 'Secret Art'
+                pInfo.textContent = `Ninjustsu charge capacity increased to 3. (base: 2 charges)`
+                break;
+
+            // Third Column
+            case 'x12':
+                pName.textContent = 'Lucky Clover'
+                pInfo.textContent = `25% chance to use Ninjutsu at no cost to your equipment. `
+                break;
+            case 'x21':
+                pName.textContent = 'Vortex'
+                pInfo.textContent = `Nearby special zombie are push back. (cooldown 60 seconds)`
+                break;
+            case 'x30':
+                pName.textContent = 'Keen Eye'
+                pInfo.textContent = `Everytime you shoot, you have a 2% chance to instant kill.`
+                break;
+            case 'x4':
+                pName.textContent = `Stunning`
+                pInfo.textContent = `After using a Ninjutsu charge, your melee attacks have 50% chance to stun. `
+                break;
+
+            // Second Set
+            case 'x13':
+                pName.textContent = 'Lightweight'
+                pInfo.textContent = 'Your equipment fully recharges in 180 seconds. Decreased 60 seconds for every special zombie killed.'
+                break;
+            case 'x22':
+                pName.textContent = 'Taste The Venom'
+                pInfo.textContent = 'Special zombies are slowed after hitting you.'
+                break;
+
+            // 2 First Column
+            case 'x31':
+                pName.textContent = 'Honor I'
+                pInfo.textContent = 'Killing 10 zombies with headshots within 5 seconds, increase accuracy by 50% for 5 seconds.'
+                break;
+            case 'x5':
+                pName.textContent = 'No Blind Spot'
+                pInfo.textContent = `Your melee strike's range are 360 degrees.`
+                break;
+            case 'x14':
+                pName.textContent = 'Lucky Diamond'
+                pInfo.textContent = 'You have 25% chance to start with a random Tier 3 primary weapon.'
+                break;
+            case 'x23':
+                pName.textContent = 'Activation'
+                pInfo.textContent = `When you have no equipment, increase all weapon penetration by 2.`
+                break;
+
+            // 2 Second Column
+            case 'x32':
+                pName.textContent = 'See All'
+                pInfo.textContent = `All nearby special zombies are automatically marked.`
+                break;
+            case 'x6':
+                pName.textContent = 'Star Alignment'
+                pInfo.textContent = `Killing 30 zombies in rapid succession grants masking effect for the whole team, for 3 seconds.`
+                break;
+            case 'x15':
+                pName.textContent = `Honor II`
+                pInfo.textContent = 'Killing 20 zombies with headshots within 10 seconds, increase accuracy and firearm damage by 25% for 10 seconds.'
+                break;
+            case 'x24':
+                pName.textContent = `Control Placement`
+                pInfo.textContent = `When there are more than 1 special zombies within 5 meters, they are briefly stunned for 1 seconds. (cooldown 180 seconds)`
+                break;
+
+            // 2 Third Column
+            case 'x33':
+                pName.textContent = 'Vicious'
+                pInfo.textContent = `After draining your primary weapon's magazine. Every zombie killed with melee attacks restore 5% of your primary's magazine.`
+                break;
+            case 'x7':
+                pName.textContent = 'Equilibrium'
+                pInfo.textContent = `If all your teammates are dead, you have inifinite ammo for all weapons for 5 seconds.`
+                break;
+            case 'x16':
+                pName.textContent = `No More Honor`
+                pInfo.textContent = `Killing 30 zombies with headshots within 10 seconds, enter "GOD MODE" and instant kill all zombies including teammate for 5 seconds. (cooldown 60 seconds)`
+                break;
+            case 'x25':
+                pName.textContent = 'Lucky Spade'
+                pInfo.textContent = `25% chance that killing a special zombie will cause it to drop a heavy weapon.`
+                break;
+
+            // Third Set
+            case 'x34':
+                pName.textContent = 'Perfect Shot'
+                pInfo.textContent = 'When you headshot an incapacitated teammate, they will automatically rise up and grants masking for 3 seconds.'
+                break;
+            case 'x8':
+                pName.textContent = 'Perfect Mix'
+                pInfo.textContent = 'After teleporting to your teammate, release deadly gas harmful to zombies around you.'
+                break;
+
+            // 3 First Column
+            case 'x17':
+                pName.textContent = 'Backlash'
+                pInfo.textContent = `Melee attacks behind zombies, instant kill.`
+                break;
+            case 'x26':
+                pName.textContent = 'Not Over'
+                pInfo.textContent = `Before being incapacitated, you're ghosted for 5 seconds. Killing a special zombie while ghosted prevent incapacitation. (cooldown 180 seconds)`
+                break;
+            case 'x35':
+                pName.textContent = 'Forbidden Flame'
+                pInfo.textContent = 'Your flamethrower set your teammates on fire without hurting them. Zombies are set on fire if they get too close to your teammates.'
+                break;
+            case 'xr8':
+                pName.textContent = `King's Entrance.`
+                pInfo.textContent = `After teleporting to your teammate, set nearby zombies on fire.`
+                break;
+
+            // 3 Second Column
+            case 'x9':
+                pName.textContent = 'Scatter'
+                pInfo.textContent = `Zombies who are push back by you can also push back zombies behind them.`
+                break;
+            case 'x18':
+                pName.textContent = 'Forbidden Art'
+                pInfo.textContent = `Your teleport can revive dead or incapacitated teammate.`
+                break;
+            case 'x27':
+                pName.textContent = 'Lucky Heart'
+                pInfo.textContent = `Instead of becoming incapacitated, you have 25% chance to gain a 25% temporary health boost and keep going.`
+                break;
+            case 'x36':
+                pName.textContent = `Real Bullets`
+                pInfo.textContent = `Every time you reload, you have 15% chance of explosive rounds.`
+                break;
+
+            // 3 Third Column
+            case 'xr2':
+                pName.textContent = 'Self Harm'
+                pInfo.textContent = `Friendly fire you done are also inflicted to youself.`
+                break;
+            case 'xr3':
+                pName.textContent = 'Masterlock'
+                pInfo.textContent = `You do not need breaching charge to breach a door. (cooldown 300 seconds)`
+                break;
+            case 'xr4':
+                pName.textContent = 'Genjutsu'
+                pInfo.textContent = 'Special zombies who are marked takes 20% more damage.'
+                break;
+            case 'xr5':
+                pName.textContent = `Invincible`
+                pInfo.textContent = `Masking and temporary health last 25% longer.`
+                break;
+                incap
+            // Fourth Set
+            case 'xr6':
+                pName.textContent = `Hunter`
+                pInfo.textContent = 'Increased accuracy for all weapons by 15%.'
+                break;
+            case 'xr7':
+                pName.textContent = 'Cold Blooded'
+                pInfo.textContent = 'You can melee your teammates, the amount dealt is the amount you recover.'
                 break;
         }
     })

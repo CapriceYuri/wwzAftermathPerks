@@ -13,7 +13,7 @@ td,th{
 #gs{
     display: block;
 }
-#hr,#med,#fix,#slash,#ex,#dm,#v{
+#hr,#med,#fix,#slash,#ex,#dm,#v, #gs{
     display: none;
 }
 
