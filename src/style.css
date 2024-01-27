@@ -103,3 +103,7 @@ a{
       opacity: 0;
     }
   }
+
+  .boxes{
+    height: 100px;
+  }
