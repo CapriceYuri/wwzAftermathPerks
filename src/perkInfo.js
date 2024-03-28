@@ -1738,9 +1738,33 @@ perks.forEach(item => {
                 pName.textContent = `Go The Distance II`
                 pInfo.textContent = `Quadrocopter charge (the number of stun shots or kills the Quadrocopter can perform)is increased by 5%.`
                 break;
+            case `dme3`:
+                pName.textContent = `Handyman`
+                pInfo.textContent = `Your Quadrocopter will automatically reload autoturrets within 10 meters (cooldown 30 seconds).`
+                break;
+            case `dmi3`:
+                pName.textContent = `As a team!`
+                pInfo.textContent = `The speed of setting up defense kits is increased by 50% for player followed by the drone.`
+                break;
+            case `dmm3`:
+                pName.textContent = `He can do it all!`
+                pInfo.textContent = `Receive 2 seconds of invulnerability when the Quadrocopter is depleted (applies to the person it's following).`
+                break;
             case `va3`:
                 pName.textContent = `Secret Stash II`
                 pInfo.textContent = `Carried ammo capacity for primary weapons increased by 5%.`
+                break;
+            case `ve3`:
+                pName.textContent = `Don't bother him!`
+                pInfo.textContent = `While using a Mortar or Stationary machinegun, you take 15% less damage.`
+                break;
+            case `vi3`:
+                pName.textContent = `Strong Genes`
+                pInfo.textContent = `You can withstand for 2 seconds longer before turning after being infected.`
+                break;
+            case `vm3`:
+                pName.textContent = `Harvester`
+                pInfo.textContent = `Killing 15 zombies during a Shield Charge restores 5% rounds to the magazine of primary weapon.`
                 break;
         }
     })
