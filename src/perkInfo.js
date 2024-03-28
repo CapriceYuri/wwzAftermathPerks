@@ -1637,6 +1637,111 @@ perks.forEach(item => {
                 pName.textContent = 'Linebacker'
                 pInfo.textContent = 'Shield Charge allows you to run for an additional 1 seconds (base: 5 seconds).'
                 break;
+            // NEW DATA
+            case `gsa3`:
+                pName.textContent = 'My Bad II'
+                pInfo.textContent = 'Take 10% less friendly fire damage.'
+                break;
+            case `gse3`:
+                pName.textContent = `I won't budge from this spot!`
+                pInfo.textContent = 'After the end of durability of the stationary machinegun there is 10% chance (5% for hordemode) to receive an additional one.'
+                break;
+            case `gsi3`:
+                pName.textContent = 'Hold the line!'
+                pInfo.textContent = 'The handling of primary and secondary weapons is increased by 10%.'
+                break;
+            case `gsm3`:
+                pName.textContent = `Sleight of Hand`
+                pInfo.textContent = `Switch weapons 25% faster (stackable but can't be higher than 150%).`
+                break;
+            case `hra3`:
+                pName.textContent = 'Hole Punch II'
+                pInfo.textContent = `Effective range of pistols and secondary weapon SMG's is increased by 50%.`
+                break;
+            case `hre3`:
+                pName.textContent = `Blink of an eye`
+                pInfo.textContent = `Reload speed of secondary weapons increased by 15%.`
+                break;
+            case `hri3`:
+                pName.textContent = `Knock Knock II`
+                pInfo.textContent = `10% chance of using Breaching Charge without spending it.`
+                break;
+            case `hrm3`:
+                pName.textContent = `Direct Blast III`
+                pInfo.textContent = `Your explosives can kill 5% more targets.`
+                break;
+            case `ma3`:
+                pName.textContent = `Empathy II`
+                pInfo.textContent = `Using the Stim Pistol on a teammate will also additionally apply 10% of its effect to you.`
+                break;
+            case `me3`:
+                pName.textContent = `Remote Healthcare II`
+                pInfo.textContent = `Stim Pistol range increased by 10%`
+                break;
+            case `mi3`:
+                pName.textContent = `Hypervitaminosis`
+                pInfo.textContent = `After using a medkits, you will restore 10% of its effect to a random ally.`
+                break;
+            case `mm3`:
+                pName.textContent = `Paramedic II`
+                pInfo.textContent = `Revive speed increased by 10%.`
+                break;
+            case `fa3`:
+                pName.textContent = `Go Get 'Em II`
+                pInfo.textContent = `Reviving a teammate will restore 10% or primary weapon's ammunition for you and your teammate.`
+                break;
+            case `fe3`:
+                pName.textContent = `I made it myself`
+                pInfo.textContent = `Autoturrets ammunition is increased by 10% for all team.`
+                break;
+            case `fi3`:
+                pName.textContent = `Kevlar`
+                pInfo.textContent = `After reviving an ally, both of you take 25% less damage for 5 seconds.`
+                break;
+            case `fm3`:
+                pName.textContent = `Sleight of Hand`
+                pInfo.textContent = `Switch weapons 25% faster.`
+                break;
+            case `sa3`:
+                pName.textContent = `Flash Sale II`
+                pInfo.textContent = `Killing a stunned special zombie restores 5% of your primary weapon's ammunition.`
+                break;
+            case `se3`:
+                pName.textContent = `Get lost!`
+                pInfo.textContent = `The Electric grids can kill 5% more zombies for all team.`
+                break;
+            case `si3`:
+                pName.textContent = `Swapping Mags II`
+                pInfo.textContent = `SMG's reload speed is increased by 5%.`
+                break;
+            case `sm3`:
+                pName.textContent = `Wheatgrass II`
+                pInfo.textContent = `Health increased by 5%.`
+                break;
+            case `exa3`:
+                pName.textContent = `Dragon Hide II`
+                pInfo.textContent = `Fire resistance for all your allies is increased by 10%.`
+                break;
+            case `exe3`:
+                pName.textContent = `Rosehip`
+                pInfo.textContent = `Barbed wire can kill 10% more targets for all team.`
+                break;
+            case `exi3`:
+                pName.textContent = `Oily hands`
+                pInfo.textContent = `Throw distance of a Molotov increased by 25%.`
+                break;
+            case `exm3`:
+                pName.textContent = `Bandolier II`
+                pInfo.textContent = `All defense kits you install can kill 10% more targets and have 10% more ammo capacity.`
+                break;
+            case `dma3`:
+                pName.textContent = `Go The Distance II`
+                pInfo.textContent = `Quadrocopter charge (the number of stun shots or kills the Quadrocopter can perform)is increased by 5%.`
+                break;
+            case `va3`:
+                pName.textContent = `Secret Stash II`
+                pInfo.textContent = `Carried ammo capacity for primary weapons increased by 5%.`
+                break;
         }
     })
 })
